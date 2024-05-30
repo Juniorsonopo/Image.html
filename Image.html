@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Base64 to Image</title>
+</head>
+<body>
+    <h1>Decoded Image</h1>
+    <img id="image" src="" alt="Decoded Image" style="max-width: 100%; height: auto;">
+    <script>
+        // Base64 string
+        const base64String = `iVBORw0KGgoAAAANSUhEUgAAAsMAAAMTCAIAAADLp42OAAEAAElEQVR4nOydd4AU5fnHv8/7zu5eP+A4uvSOCAgoqFjAXrDE3ktsUWMSNcVfoqmWRE2MMZbYE2vEEqOIihosKEWQ3qUeHFzj6paZ9/n9Mbt7e5W7vb3bK88nm3PZnZ15ZnZ23u8871MAQRAEQRCEuJg9e7ZKtg2CIAiCIHRgREkIgiAIghA/oiQEQRAEQYgfURKCIAiCIMSPKAlBEARBEOJHlIQgCIIgCPEjSkIQBEEQhPgRJSEIgiAIQvyIkhAEQRAEIX5ESQiCIAiCED+iJARBEARBiB9REoIgCIIgxI8oCUEQBEEQ4keUhCAIgiAI8SNKQhAEQRCE+BElIQiCIAhC/IiSEARBEAQhfkRJCIIgCIIQP6IkBEEQBEGIH1ESgiAIgiDEjygJQRAEQRDiR5SEIAiCIAjxI0pCEARBEIT4ESUhCIIgCEL8iJIQBEEQBCF+...`;
+
+        // Decode and display the image
+        document.getElementById('image').src = 'data:image/png;base64,' + base64String;
+    </script>
+</body>
+</html>
